@@ -1,0 +1,14 @@
+body{
+	text-align: center;
+}
+h1{
+	font-size: 5em;
+}
+.yearbutton{
+	background-color: gold;
+	display: inline-block;
+	font-size: 6em;
+	width: 20%;
+	padding: 25px 0px 25px 0px;
+	margin:15px;
+}
