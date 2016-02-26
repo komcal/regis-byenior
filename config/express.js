@@ -6,7 +6,7 @@ module.exports = function(){
   app.use(express.static('./public'));
 
   require('../app/routes/index.routes')(app);
-
+  require('../app/routes/form.routes')(app);
   return app;
 
 }
