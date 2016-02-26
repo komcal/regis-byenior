@@ -5,5 +5,5 @@ html(lang="en")
 	body
 		div
 			h1= "YEAR "+year
-			form
-				input(type='text', id='std_id', name='std_id')
+			form(method="post",action="../profile", name="profile")
+				input(type='text', name='std_id')
