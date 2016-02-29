@@ -8,5 +8,8 @@ html(lang="en")
 			div
 				h1= std_id
 			div
-				h1 name
-				span ได้ลงทะเบียนเข้างานเรียบร้อยแล้ว!
+				h1= std_name
+			form(method="POST", action='/finish', name='confirm')
+				input(type='hidden', name='name', value=std_id)
+				input(type='submit', value='confirm')
+			button(onclick="location.href = '../';") cancel

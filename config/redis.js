@@ -1,19 +1,16 @@
-
-module.exports = function(student,callback){
-  var redis = require('redis');
-  var client = redis.createClient();
-  client.lrange(student.list, 0, -1, function(err, students){
-  if(err) console.log("ERROR");
-  else{
-    students = JSON.parse(students);
-    var d = student.id;
-    var data = find(d,'id',students);
-    callback(data);
-  }
-});
-client.quit();
+var redis = require('redis');
+var client = redis.createClient();
+exports.findById = function(list,id,callback){
+  client.lrange(list, 0, -1, function(err, students){
+    if(err) console.log("ERROR");
+    else{
+      students = JSON.parse(students);
+      var data = find(id,'id',students);
+      client.quit();
+      callback(data);
+    }
+  });
 }
-
 function find(data,field,items){
   for(var item of items){
     if(item[field] == data){
@@ -21,3 +18,6 @@ function find(data,field,items){
     }
   }
 }
+
+
+return client;

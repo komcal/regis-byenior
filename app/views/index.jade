@@ -4,7 +4,7 @@ html(lang="en")
 		include ./head.jade 
 	body
 		div
-			h1 ปี
-			button(onclick="location.href = './register/1';") 1
-			button(onclick="location.href = './register/2';") 2
-			button(onclick="location.href = './register/3';") 3
+			h1 BYENIOR CPSK 2016
+			form(method="post",action="/profile", name="profile")
+				input(type='text', name='std_id')
+				input(type='submit', value='Submit')

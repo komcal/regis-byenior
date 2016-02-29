@@ -4,10 +4,6 @@ exports.render = function(req, res){
 exports.renderPost = function(req, res){
   var id = req.body.std_id;
   var list = 'year'+(8-id[1]+1);
-  var student = {
-    id : req.body.std_id,
-    list : 'year'+(8-id[1]+1),
-  };
   var env = process.env.NODE_ENV || 'development';
   if(env === 'development'){
     res.render('succeed',{
@@ -15,15 +11,19 @@ exports.renderPost = function(req, res){
       'std_name': 'komkanit'
     });
   }
-  else require('../../config/redis')(student,callback);
-
+  else{
+    var redis = require('../../config/redis');
+    redis.findById(list,id,callback);
+  }
   function callback(data){
     console.log(data);
-    if(data)
+    if(data){
+      var name = data.gender+" "+data.name+ "  "+data.lastname;
       res.render('succeed',{
         'std_id': data.id,
-        'std_name': data.name
+        'std_name': name
       });
+    }
     else
     res.render('succeed',{
       'std_id': "ERROR"
