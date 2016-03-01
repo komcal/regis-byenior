@@ -7,7 +7,7 @@ exports.renderPost = function(req, res){
   var env = process.env.NODE_ENV || 'development';
   if(env === 'development'){
     res.render('succeed',{
-      'std_id': student.id,
+      'std_id': id,
       'std_name': 'komkanit'
     });
   }
