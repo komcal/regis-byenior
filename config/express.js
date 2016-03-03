@@ -5,6 +5,7 @@ module.exports = function(){
   app.use(bodyParser.urlencoded({
     extended: true
   }));
+  app.use(express.static('./public'));
   app.set('views','./app/views/');
   app.set('view engine', 'jade');
   app.use(express.static('./public'));

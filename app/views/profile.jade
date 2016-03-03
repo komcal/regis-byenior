@@ -8,7 +8,9 @@ html(lang="en")
 			div
 				h1= std_id
 			div
-				h1= std_name
+				h2= std_name
+				h2= std_nickname
+				h2= std_study
 			form(method="POST", action='/finish', name='confirm')
 				input(type='hidden', name='name', value=std_id)
 				input(type='submit', value='confirm')

@@ -6,9 +6,11 @@ exports.renderPost = function(req, res){
   var list = 'year'+(8-id[1]+1);
   var env = process.env.NODE_ENV || 'development';
   if(env === 'development'){
-    res.render('succeed',{
+    res.render('profile',{
       'std_id': id,
-      'std_name': 'komkanit'
+      'std_name': 'นายคมคณิต สัจจอุตตรา',
+      'std_nickname': 'แคล',
+      'std_study': 'CPE'
     });
   }
   else{
@@ -19,9 +21,11 @@ exports.renderPost = function(req, res){
     console.log(data);
     if(data){
       var name = data.gender+" "+data.name+ "  "+data.lastname;
-      res.render('succeed',{
+      res.render('profile',{
         'std_id': data.id,
-        'std_name': name
+        'std_name': name,
+        'std_nickname': data.nickname,
+        'std_study': data.study
       });
     }
     else
