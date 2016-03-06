@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:200,600,400&subset=thai,latin);
+body{
+	text-align: center;
+	background-color: #eee;
+	color: #333;
+	font-family: 'Kanit', sans-serif;	
+	margin-top: 100px; 
+}
+.logo{
+	font-weight: 600;
+	font-size: 5em;		
+ 	background: linear-gradient(270deg, #00e0f8, #54f800, #f8d200, #f80200, #f800e4);
+	background-size: 1000% 1000%;
+
+	-webkit-animation: mmnimate 30s ease infinite;
+	-moz-animation: mmnimate 30s ease infinite;
+	animation: mmnimate 30s ease infinite;
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+h1{
+	font-size: 3em;
+}
+.text{
+	font-size: 2em;
+	font-weight: 200;
+}
+.name{
+	font-size: 2.9em;
+	font-weight: 400;
+	margin: 20px;
+}
+.nickname{
+	font-size: 2.2em;
+	margin:20px;
+}
+input[type="text"]{
+	padding: 15px;
+	font-size: 2.5em;
+	margin: 15px;
+	width: 50%;
+	text-align: center;
+}
+form{
+	display: inline;
+}
+.button{
+	display: inline;
+	padding: 5px;
+	margin: 15px;
+}
+
+
+@-webkit-keyframes mmnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes mmnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes mmnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
