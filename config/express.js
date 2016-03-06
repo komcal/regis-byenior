@@ -11,7 +11,6 @@ module.exports = function(){
   app.use(express.static('./public'));
 
   require('../app/routes/index.routes')(app);
-  require('../app/routes/form.routes')(app);
   require('../app/routes/profile.routes')(app);
   require('../app/routes/finish.routes')(app);
 

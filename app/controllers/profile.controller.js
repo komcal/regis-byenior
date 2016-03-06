@@ -28,9 +28,8 @@ exports.renderPost = function(req, res){
         'std_study': data.study
       });
     }
-    else
-    res.render('succeed',{
-      'std_id': "ERROR"
-    });
+    else{
+      res.render('error');
+    }
   }
 }
