@@ -4,7 +4,7 @@ body{
 	background-color: #eee;
 	color: #333;
 	font-family: 'Kanit', sans-serif;	
-	margin-top: 60px; 
+	margin-top: 100px; 
 }
 .logo{
 	font-weight: 600;
@@ -20,10 +20,21 @@ body{
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
-.h2{
-	font-size: 2.5em;
+h1{
+	font-size: 3em;
+}
+.text{
+	font-size: 2em;
+	font-weight: 200;
+}
+.name{
+	font-size: 2.9em;
 	font-weight: 400;
-	margin: 40px;
+	margin: 20px;
+}
+.nickname{
+	font-size: 2.2em;
+	margin:20px;
 }
 input[type="text"]{
 	padding: 15px;

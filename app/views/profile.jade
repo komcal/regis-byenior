@@ -4,9 +4,9 @@ html(lang="en")
 		include ./head.jade
 	body
 		div
-			span Is that you?
-			h2= std_name
-			div
+			p.text Is that you?
+			p.name= std_name
+			p.nickname
 				= std_nickname + ' '  
 				= std_study
 			form(method="POST", action='/finish', name='confirm')
