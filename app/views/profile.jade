@@ -11,5 +11,5 @@ html(lang="en")
 				= std_study
 			form(method="POST", action='/finish', name='confirm')
 				input(type='hidden', name='name', value=std_id)
-				input.button.green(type='submit', value='Yes')
-			button.button.red(onclick="location.href = '../';") No
+				input.button.red(type='submit', value='Yes, Register')
+			a(href="../") Not you? 
