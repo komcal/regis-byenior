@@ -15,10 +15,6 @@ body{
 	-webkit-animation: mmnimate 60s ease infinite;
 	-moz-animation: mmnimate 60s ease infinite;
 	animation: mmnimate 60s ease infinite;
-
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
 }
 h1{
 	font-size: 3em;
@@ -44,6 +40,7 @@ input[type="text"]{
 	text-align: center;
 	border: 0;
 	border-bottom: dotted;
+	background-color: transparent;
 }
 form{
 	display: inline;
@@ -53,8 +50,6 @@ form{
 	padding: 5px;
 	margin: 15px;
 }
-
-
 @-webkit-keyframes mmnimate {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}

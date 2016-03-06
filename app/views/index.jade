@@ -4,8 +4,8 @@ html(lang="en")
 		include ./head.jade 
 	body
 		div
-			h2 Welcome to
+			span.text Welcome to
 			img.logo(src='/img/logo.png')
-			h2 Enter your student ID
+			span.text Enter your student ID
 			form(method="post",action="/profile", name="profile")
 				input(type='text', name='std_id')
