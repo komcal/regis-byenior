@@ -1,17 +1,15 @@
 doctype html
 html(lang="en")
 	head
-		//meta(http-equiv="refresh",content="5;url=./index.html")		
 		include ./head.jade
 	body
 		div
+			span Is that you?
+			h2= std_name
 			div
-				h1= std_id
-			div
-				h2= std_name
-				h2= std_nickname
-				h2= std_study
+				= std_nickname + ' '  
+				= std_study
 			form(method="POST", action='/finish', name='confirm')
 				input(type='hidden', name='name', value=std_id)
-				input(type='submit', value='confirm')
-			button(onclick="location.href = '../';") cancel
+				input.button.green(type='submit', value='Yes')
+			button.button.red(onclick="location.href = '../';") No
