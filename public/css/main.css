@@ -3,8 +3,8 @@ body{
 	text-align: center;
 	background-color: #fafafa;
 	color: #333;
-	font-family: 'kanit',sans-serif;
-	margin-top: 200px; 
+	font-family: Helvetica,'kanit',sans-serif;
+	margin-top: 180px; 
 }
 .logo{
 	max-width: 781px;
@@ -28,7 +28,6 @@ h1{
 	font-size: 2em;
 }
 .welcome,.enterid,h1{
-	font-family: Helvetica;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: .1875em;
@@ -79,8 +78,7 @@ input[type="text"]{
     font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px;
-		user-select: none;
-		margin:25px;
+	margin:25px;
 }
 .red{
     color: #ffffff;
@@ -94,33 +92,4 @@ input[type="text"]{
 .red:focus{
 	background-color: #8d2e0d;
 	border-color: #682209;
-}
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
 }
