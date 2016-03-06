@@ -93,3 +93,9 @@ input[type="text"]{
 	background-color: #8d2e0d;
 	border-color: #682209;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
