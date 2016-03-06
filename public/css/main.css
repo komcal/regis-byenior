@@ -7,14 +7,14 @@ body{
 	margin-top: 100px; 
 }
 .logo{
-	font-weight: 600;
-	font-size: 5em;		
- 	background: linear-gradient(270deg, #00e0f8, #54f800, #f8d200, #f80200, #f800e4);
+	max-width: 781px;
+	width: 70%;
+ 	background: linear-gradient(270deg, #0075f8, #54f800, #f8d200, #f80200, #f800e4, #f80200, #f8d200, #54f800, #0075f8);
 	background-size: 1000% 1000%;
 
-	-webkit-animation: mmnimate 30s ease infinite;
-	-moz-animation: mmnimate 30s ease infinite;
-	animation: mmnimate 30s ease infinite;
+	-webkit-animation: mmnimate 60s ease infinite;
+	-moz-animation: mmnimate 60s ease infinite;
+	animation: mmnimate 60s ease infinite;
 
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -40,8 +40,10 @@ input[type="text"]{
 	padding: 15px;
 	font-size: 2.5em;
 	margin: 15px;
-	width: 50%;
+	width: 30%;
 	text-align: center;
+	border: 0;
+	border-bottom: dotted;
 }
 form{
 	display: inline;
