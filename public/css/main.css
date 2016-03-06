@@ -9,7 +9,7 @@ body{
 .logo{
 	font-weight: 600;
 	font-size: 5em;		
- 	background: linear-gradient(270deg, #00e0f8, #54f800, #f8d200, #f80200, #f800e4);
+ 	background: linear-gradient(270deg, #00e0f8, #54f800, #f8d200, #f80200, #1e00ff, #f80200, #f8d200, #54f800, #00e0f8);
 	background-size: 1000% 1000%;
 
 	-webkit-animation: mmnimate 30s ease infinite;
