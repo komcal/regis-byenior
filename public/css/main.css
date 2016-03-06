@@ -3,7 +3,7 @@ body{
 	text-align: center;
 	background-color: #fafafa;
 	color: #333;
-	font-family: 'Kanit', sans-serif;	
+	font-family: 'kanit',sans-serif;
 	margin-top: 200px; 
 }
 .logo{
@@ -17,19 +17,26 @@ body{
 	animation: mmnimate 60s ease infinite;
 }
 .welcome{
-	font-size:2em;
+	font-size:1.2em;
 	margin-bottom:50px;
 }
 .enterid{
 	margin-top:70px;
-	font-size: 1.3em;
+	font-size: 0.9em;
+}
+.welcome,.enterid,h1{
+	font-family: Helvetica;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: .1875em;
 }
 h1{
-	font-size: 3em;
+	font-size: 2em;
 }
 .text{
-	font-size: 2em;
-	font-weight: 200;
+	font-size: 1.4em;
+    font-weight: 200;
+    letter-spacing: .1875em;
 }
 .name{
 	font-size: 2.9em;
@@ -92,4 +99,33 @@ input[type="text"]{
 .red:focus{
 	background-color: #8d2e0d;
 	border-color: #682209;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
 }
