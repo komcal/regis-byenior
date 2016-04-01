@@ -1,5 +1,27 @@
 var redis = require('redis');
 var client = redis.createClient();
+exports.getMember = function(callback){
+  var s = [];
+  ['year1', 'year2', 'year3', 'year4'].forEach(function(year){
+    client.lrange(year,0,-1, function(err, students){
+      var l = 0;
+      for(student of students){
+        l++;
+        student = JSON.parse(student);
+        if(student['come'] === '1'){
+          var k = {
+            name: student['gender']+ student['name']+" "+student['lastname'],
+            id: student['id'],
+            study: student['study']
+          }
+          s.push(k);
+        }
+        if(year =='year4' && l == students.length)
+          callback(s);
+      }
+    });
+  });
+}
 exports.findById = function(list,id,callback){
   client.lrange(list, 0, -1, function(err, students){
     if(err) console.log("ERROR");

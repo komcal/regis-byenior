@@ -13,6 +13,8 @@ module.exports = function(){
   require('../app/routes/index.routes')(app);
   require('../app/routes/profile.routes')(app);
   require('../app/routes/finish.routes')(app);
+  require('../app/routes/member.routes')(app);
+
 
   return app;
 
